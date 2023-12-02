@@ -1,0 +1,56 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--stone-950);
+}
+
+#hero {
+  position: relative;
+  padding: 0 7.5rem 1rem;
+  margin-top: 3rem;
+  display: flex;
+}
+
+.hero__content {
+  width: 75%;
+}
+.hero-content__title {
+  color: var(--white);
+  font-family: Inter;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-content__title span {
+  color: var(--green-500);
+  font-family: Inter;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.hero-content__paragraph {
+  margin: 1rem 0 2.25rem;
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.25rem; /* 150% */
+}
+
+.hero-content__cta {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--stone-950);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--green-500);
+}

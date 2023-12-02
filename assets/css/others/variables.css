@@ -1,0 +1,23 @@
+:root{
+    --black: #000000;
+    --green-900: #005B00;
+    --tint-black: #020303;
+    --slate-900: #070040;
+    --stone-950: #0F1806;
+    --neutral-900: #111A08;
+    --neutral: #131415;
+    --indigo-950: #300D38;
+    --green-600: #3AAC30;
+    --neutral-700: #414042;
+    --green-500: #45B73B;
+    --zinc-700: #47474A;
+    --violet-700: #660CD7;
+    --violet-400: #A589FF;
+    --stone-300: #B9D6B7;
+    --amber-600: #DC710E;
+    --orange-600: #E95F26;
+    --red-500: #F05E47;
+    --amber-500: #FBA919;
+    --yellow-400: #FFC200;
+    --white: #FFFFFF;
+}

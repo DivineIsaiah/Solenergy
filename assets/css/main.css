@@ -1,0 +1,20 @@
+/* pages */
+@import url('./pages/index.css');
+
+/* components */
+@import url('./components/navbar.css');
+@import url('./components/footer.css');
+
+/* utilities */
+@import url('./others/fonts.css');
+@import url('./others/variables.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}

@@ -1,25 +1,13 @@
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    background: black;
-}
-
-li, a{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-}
-
 header{
+    background-color: var(--stone-950);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 2.5rem 7.5rem 0;
 }
 
 .logo, .sol, .En, .rgy{
+    font-family: 'Manrope', sans-serif;
     cursor: pointer;
     margin-right: auto;
     font-size: 24px;
@@ -27,17 +15,15 @@ header{
     color: white;
 }
 
-.Home{
-    Font-weight: bold;
-    color: #45b73b;
-}
-
-.service, .contact{
+.nav__links li a{
+    text-decoration: none;
+    font-size: 1rem;
     font-weight: 400;
-    color: white;
+    color: var(--white);
+    line-height: 1.5rem;
 }
 .sol{
-    color: #45b73b;
+    color: var(--green-500);
     
 }
 .nav__links{
@@ -49,11 +35,11 @@ header{
     padding: 0px 20px;
 }
 
-.nav__links li a{
-    transition: all 0.15s ease 0s;
-    
+.nav__links li a.active{
+    font-weight: bold;
+    color: var(--green-500);
 }
 
 .nav__links li a:hover{
-    color: ;
+    color: var(--green-500);
 }
