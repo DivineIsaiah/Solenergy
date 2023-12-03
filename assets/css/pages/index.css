@@ -10,25 +10,17 @@ body {
   display: flex;
 }
 
-.hero__content {
-  width: 75%;
-}
+/* .hero__content {
+ */
+
 .hero-content__title {
   color: var(--white);
-  font-family: Inter;
   font-size: 4rem;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
 }
 
 .hero-content__title span {
   color: var(--green-500);
-  font-family: Inter;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
 }
 
 .hero-content__paragraph {

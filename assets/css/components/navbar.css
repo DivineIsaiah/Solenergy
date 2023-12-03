@@ -10,9 +10,9 @@ header{
     font-family: 'Manrope', sans-serif;
     cursor: pointer;
     margin-right: auto;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: white;
+    color: var(--white);
 }
 
 .nav__links li a{
@@ -22,17 +22,18 @@ header{
     color: var(--white);
     line-height: 1.5rem;
 }
+
 .sol{
     color: var(--green-500);
-    
 }
+
 .nav__links{
     list-style: none;
 }
 
 .nav__links li{
     display: inline-block;
-    padding: 0px 20px;
+    margin-right: 2.25rem;
 }
 
 .nav__links li a.active{
