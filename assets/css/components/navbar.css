@@ -1,9 +1,12 @@
 header{
     background-color: var(--stone-950);
+    padding: 2.5rem 7.5rem 0;
+}
+
+header .navbar{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 2.5rem 7.5rem 0;
+    align-items: center;    
 }
 
 .logo, .sol, .En, .rgy{
