@@ -217,27 +217,26 @@ header .hero #h3{
     margin-bottom:7.25rem;
 }
 
-.section-4 h2{
-    text-align: center;
-}
-
+// Section-4 Container
 .section-4 .container{
     padding: 3.5rem 15.31rem;
 }
 
+// H2 Header/FAQs
 .section-4 .container h2 {
     @include texts (2.5rem,center,700);
     color: var(--white);
     margin-bottom: 2rem;
 }
 
-
+// FAQ BOX
 .section-4 .container .faq-box{
     color:var(--neutral);
     margin-bottom:2rem ;
 
 }
 
+// Question
 .faq-box summary {
     @include texts(1.5rem,left ,600 );
     background-color: var(--green-500);
@@ -247,7 +246,6 @@ header .hero #h3{
     list-style: none;
     margin-bottom:1.25rem;
     padding:1rem;
-    // transition: height 1s ease;
 }
 
 .faq-box summary::-webkit-details-marker {
@@ -263,8 +261,9 @@ header .hero #h3{
     content: "\1F891";
   }  
 
+//   Answer
 .faq-box .ans{
     @include texts(1.2rem, left, 400 );
-    margin-left: 1rem;
     line-height: 2.25rem;
+    margin-left: 1rem;
 }

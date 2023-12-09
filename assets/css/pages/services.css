@@ -201,9 +201,6 @@ header .hero #h3 {
   background-color: var(--stone-950);
   margin-bottom: 7.25rem; }
 
-.section-4 h2 {
-  text-align: center; }
-
 .section-4 .container {
   padding: 3.5rem 15.31rem; }
 
@@ -256,7 +253,7 @@ details[open] summary:after {
   font-weight: 400;
   line-height: normal;
   text-align: left;
-  margin-left: 1rem;
-  line-height: 2.25rem; }
+  line-height: 2.25rem;
+  margin-left: 1rem; }
 
 /*# sourceMappingURL=services.css.map */
