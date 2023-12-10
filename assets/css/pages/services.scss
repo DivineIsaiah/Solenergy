@@ -28,6 +28,11 @@
 body{
     background-color: var(--white);
 }
+
+.container{
+    overflow: hidden;
+    max-width: 1440px;
+}
 // Hero Section
 
 // Hero Header
@@ -156,6 +161,7 @@ header .hero #h3{
 // Services LHS
 .section-2 .services-lhs{
     margin-top: 4rem;
+    width: 50%;   
 }
 
 .section-2 .services-lhs h3{
@@ -177,8 +183,13 @@ header .hero #h3{
     line-height: 1.75rem;
 }
 
+.service-rhs{
+    width: 50%;
+}
+
 // Services RHS/IMG
 .service-rhs img{
+    width: 100%;
     padding:0 0 4rem 0;
 }
 
@@ -193,7 +204,7 @@ header .hero #h3{
 .section-3 .container p{
     @include texts(1.5rem,center,400);
     color: var(--neutral);
-    line-height: 2rem; 
+    line-height: 2rem;
     margin:2rem 20.78rem 3rem 20.78rem;
 }
 
@@ -213,13 +224,14 @@ header .hero #h3{
 
 // FAQ Section
 .section-4{
-    background-color: var(--stone-950);
+    background: var(--green-gradient);
     margin-bottom:7.25rem;
+    position: relative;
 }
 
 // Section-4 Container
 .section-4 .container{
-    padding: 3.5rem 15.31rem;
+    padding: 1.5rem 15.31rem;
 }
 
 // H2 Header/FAQs
@@ -233,7 +245,8 @@ header .hero #h3{
 .section-4 .container .faq-box{
     color:var(--neutral);
     margin-bottom:2rem ;
-
+    position: relative;
+    z-index: 3;
 }
 
 // Question
@@ -266,4 +279,68 @@ header .hero #h3{
     @include texts(1.2rem, left, 400 );
     line-height: 2.25rem;
     margin-left: 1rem;
+}
+
+// Lightning Image
+.energy img{
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    left: 30%;
+}
+
+
+// RESPONSIVENESS
+
+@media screen and (max-width:1200px) {
+    
+// Section-2
+
+.section-2 .container{
+    padding: 0 7.5rem;
+}
+
+// Services-Section Start
+
+// Services(1,2,3)
+.section-2 .services{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom:2rem ;
+}
+
+// Services LHS
+.section-2 .services-lhs{
+    margin-top: 4rem;
+}
+
+.section-2 .services-lhs h3{
+    @include texts(2rem,start, 600);
+    color: var(--neutral);
+    margin-bottom: 2rem;
+}
+
+
+// Services Details
+.services .service-detail{
+    @include display-flex-2;
+    margin-bottom:1.25rem;
+    gap: 1.31rem;
+}
+
+.services .service-detail p{
+    @include texts(1.25,left ,400 );
+    color:var(--neutral);
+    line-height: 1.75rem;
+}
+
+// Services RHS/IMG
+.service-rhs img{
+    padding:0 0 4rem 0;
+}
+
+// Services-Section End
+
 }

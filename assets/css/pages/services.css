@@ -1,6 +1,10 @@
 body {
   background-color: var(--white); }
 
+.container {
+  overflow: hidden;
+  max-width: 1440px; }
+
 header .hero h1 {
   color: var(--white);
   font-family: "Inter", sans-serif;
@@ -129,7 +133,8 @@ header .hero #h3 {
   margin-bottom: 2rem; }
 
 .section-2 .services-lhs {
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  width: 50%; }
 
 .section-2 .services-lhs h3 {
   color: var(--white);
@@ -160,7 +165,11 @@ header .hero #h3 {
   color: var(--neutral);
   line-height: 1.75rem; }
 
+.service-rhs {
+  width: 50%; }
+
 .service-rhs img {
+  width: 100%;
   padding: 0 0 4rem 0; }
 
 .section-3 {
@@ -198,11 +207,12 @@ header .hero #h3 {
   align-items: center; }
 
 .section-4 {
-  background-color: var(--stone-950);
-  margin-bottom: 7.25rem; }
+  background: var(--green-gradient);
+  margin-bottom: 7.25rem;
+  position: relative; }
 
 .section-4 .container {
-  padding: 3.5rem 15.31rem; }
+  padding: 1.5rem 15.31rem; }
 
 .section-4 .container h2 {
   color: var(--white);
@@ -217,7 +227,9 @@ header .hero #h3 {
 
 .section-4 .container .faq-box {
   color: var(--neutral);
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 3; }
 
 .faq-box summary {
   color: var(--white);
@@ -255,5 +267,57 @@ details[open] summary:after {
   text-align: left;
   line-height: 2.25rem;
   margin-left: 1rem; }
+
+.energy img {
+  position: absolute;
+  z-index: 2;
+  top: 0%;
+  left: 30%; }
+
+@media screen and (max-width: 1200px) {
+  .section-2 .container {
+    padding: 0 7.5rem; }
+
+  .section-2 .services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem; }
+
+  .section-2 .services-lhs {
+    margin-top: 4rem; }
+
+  .section-2 .services-lhs h3 {
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: start;
+    color: var(--neutral);
+    margin-bottom: 2rem; }
+
+  .services .service-detail {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 1.25rem;
+    gap: 1.31rem; }
+
+  .services .service-detail p {
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-size: 1.25;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    color: var(--neutral);
+    line-height: 1.75rem; }
+
+  .service-rhs img {
+    padding: 0 0 4rem 0; } }
 
 /*# sourceMappingURL=services.css.map */
