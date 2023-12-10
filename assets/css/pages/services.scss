@@ -193,6 +193,9 @@ header .hero #h3{
     padding:0 0 4rem 0;
 }
 
+.s-responsive{
+    display: none;
+}
 // Services-Section End
 
 
@@ -305,7 +308,7 @@ header .hero #h3{
 // Services(1,2,3)
 .section-2 .services{
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom:2rem ;
@@ -314,6 +317,7 @@ header .hero #h3{
 // Services LHS
 .section-2 .services-lhs{
     margin-top: 4rem;
+    width: 100%;
 }
 
 .section-2 .services-lhs h3{
@@ -337,10 +341,22 @@ header .hero #h3{
 }
 
 // Services RHS/IMG
+.service-rhs{
+    width: 100%;
+    height: 50%;
+}
+
 .service-rhs img{
     padding:0 0 4rem 0;
 }
 
+.s-desktop{
+    display: none;
+}
+
+.s-responsive{
+    display: contents;
+}
 // Services-Section End
 
 }
