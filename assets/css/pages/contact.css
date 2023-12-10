@@ -1,0 +1,116 @@
+
+
+body
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+/* Navbar Styling */
+header
+{
+    background-color: transparent; /* Completely transparent background */
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.plogo
+{
+    display: flex;
+    align-items: center;
+}
+
+.sol, .En, .logo, .rgy
+{
+    color: #FFF;
+    margin-right: auto;
+}
+
+.nav__links
+{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.nav__links a.active {
+    font-weight: bold;
+}
+
+/* Main Content Container Styling */
+.main__container
+{
+    display: flex;
+    gap: 2%;
+    font-family: Inter;
+    color: #FFF;
+
+}
+
+
+/* Right Section Styling */
+.right-section
+{
+    flex-grow: 1;
+    margin-top: 209px;
+}
+
+/* Contact Information Styling */
+.contact
+{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+
+.sub, .contact-details
+{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Styling for Contact Details Section */
+.contact-details
+{
+    margin-top: 16px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    vertical-align: middle;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;
+}
+
+.contact-details img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Styling for Map Container */
+.map-container
+{
+    margin: 32px 0;
+}
+
+/* Styling for Social Icons Section */
+.socials
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+}
+
