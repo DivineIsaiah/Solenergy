@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 #container {
   background-color: var(--white);
 }
@@ -245,6 +247,7 @@ figure figcaption {
 }
 
 #testimonials > svg {
+  z-index: -1;
   position: absolute;
   left: 31.25rem;
   bottom: -7.625rem;
@@ -266,12 +269,11 @@ figure figcaption {
   font-weight: 700;
 }
 
-.testimonial-container{
+.testimonial-container {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
-
 
 .testimonial__card {
   padding: 1.75rem 2.25rem;
@@ -311,6 +313,7 @@ figure figcaption {
 }
 
 .card__profile {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,19 +339,37 @@ figure figcaption {
   font-weight: 400;
 }
 
-.circles {
-  display: flex;
-  gap: 0.81rem;
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
 }
 
-#operations{
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.current, .dot:hover {
+  background-color: var(--white);
+}
+
+.mySlides {
+  display: none;
+}
+
+#operations {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
   padding: 7.25rem;
 }
-
-
-
-
