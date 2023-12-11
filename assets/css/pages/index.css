@@ -1,16 +1,21 @@
-body {
-  font-family: "Inter", sans-serif;
-  background: #101a07;
+#container {
+  background-color: var(--white);
+}
+
+.header {
+  background: var(--green-gradient);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7.5rem;
 }
 
 #hero {
+  padding-inline: 7.5rem;
   position: relative;
-  padding: 0 7.5rem 16rem;
-  margin-top: 3rem;
-}
-
-.hero__content {
-  width: 85%;
 }
 
 .hero__bg {
@@ -18,13 +23,12 @@ body {
   position: absolute;
   right: 0;
   background: url(../../images/Ellipse.png);
-  background-size: cover;
-  background-position: top;
+  background-size: contain;
+  background-position: top right;
   background-repeat: no-repeat;
 }
 
-.hero__bg img {
-  width: 100%;
+.hero__content {
 }
 
 .hero-content__title {
@@ -47,7 +51,7 @@ body {
 }
 
 .hero-content__cta {
-  margin-bottom: 4rem;
+  margin-bottom: 20rem;
   display: inline-flex;
   gap: 0.5rem;
   align-items: center;
@@ -62,21 +66,21 @@ body {
 }
 
 .hero__img {
-  width: 95%;
-  margin: 0 auto;
-  position: absolute;
-  bottom: -35%;
+  padding-inline: 7.5rem;
+  margin: -15rem 0 4rem;
+}
+
+.hero__img > img {
+  width: 100%;
 }
 
 #showcase {
-  width: 100%;
+  padding-inline: 7.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
-  background: var(--white);
-  padding: 20rem 0;
 }
 
 #showcase p {
@@ -92,17 +96,28 @@ body {
   gap: 1.5rem;
 }
 
+#services,
+#values,
+#preface {
+  margin-top: 7.25rem;
+  padding-inline: 7.5rem;
+}
+
+#services > h2,
+#values > h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 .services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.88rem;
 }
 
 /* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
 figure {
-  /* padding: 0%; */
-  /* max-height: 400px; */
+  max-height: 21rem;
   overflow: hidden;
   position: relative;
   border-radius: 1rem;
@@ -111,8 +126,7 @@ figure {
 figure img {
   width: 100%;
   margin-bottom: -4px;
-  object-fit: contain;
-  object-position: 0 -100px;
+  object-fit: cover;
 }
 
 figure figcaption {
@@ -127,12 +141,102 @@ figure figcaption {
   color: var(--white);
   bottom: 0;
   width: 100%;
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 1.25rem;
+  padding: 1rem 0;
 }
 
-@media (min-width: 800px) {
-  figure img {
-    object-position: 0;
-  }
+.services > div > a {
+  margin-top: 1.5rem;
+  color: var(--white);
+  background-color: var(--stone-950);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.62rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.card-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.88rem 2.25rem;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.625rem;
+  flex: 1 0 0;
+  border-radius: 1rem;
+  border: 1.5px solid var(--stone-950);
+  background: var(--white);
+  color: var(--neutral);
+}
+
+.card:nth-child(even) {
+  background: var(--stone-950);
+  color: var(--white);
+}
+
+.card > h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card > p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+#preface {
+  padding-block: 3.5rem;
+  background: var(--stone-950);
+  position: relative;
+}
+
+#preface > div > svg {
+  position: absolute;
+  right: 16.1875rem;
+  bottom: -2.625rem;
+}
+
+.preface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5.5rem;
+}
+
+.preface > div h3 {
+  color: #45b73b;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.preface > div p {
+  margin-top: 1.25rem;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.875rem; /* 150% */
+}
+
+#metrics{
+  padding: 7.25rem 10.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#metrics > h2{
+color: var(--neutral);
+font-size: 2.5rem;
+font-weight: 700;
 }
