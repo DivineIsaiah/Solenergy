@@ -49,7 +49,7 @@ header .hero p {
   justify-content: center;
   align-items: center; }
 
-.btn-box-1 a {
+.btn-box-1 a, .btn-box-2 a {
   color: var(--neutral); }
 
 header .hero #h3 {
@@ -327,6 +327,9 @@ details[open] summary:after {
   header .hero {
     padding: 0 2.5rem; }
 
+  .section-2 .container {
+    padding: 0 1.5rem; }
+
   header .hero h1 {
     color: var(--white);
     font-family: "Inter", sans-serif;
@@ -394,9 +397,6 @@ details[open] summary:after {
   .awards img {
     margin-left: 2.75rem; } }
 @media screen and (max-width: 900px) {
-  header {
-    padding: 2.5rem 2rem 0 2rem; }
-
   header .hero h1 {
     color: var(--white);
     font-family: "Inter", sans-serif;
@@ -405,7 +405,7 @@ details[open] summary:after {
     font-weight: 700;
     line-height: normal;
     text-align: center;
-    margin-top: 5.62rem; }
+    margin-top: 4.62rem; }
 
   header .hero p {
     color: var(--white);
@@ -414,7 +414,8 @@ details[open] summary:after {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-align: center; }
+    text-align: center;
+    line-height: 2rem; }
 
   .section-1 {
     margin: 6rem 2rem 2rem 2rem; }
@@ -480,7 +481,7 @@ details[open] summary:after {
   header .hero h1 {
     color: var(--white);
     font-family: "Inter", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -515,7 +516,7 @@ details[open] summary:after {
   .section-1 .h2 {
     color: var(--white);
     font-family: "Inter", sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -575,8 +576,19 @@ details[open] summary:after {
   .section-4 .container {
     padding: 1.5rem 2rem; } }
 @media screen and (max-width: 600px) {
+  .header .container {
+    margin-bottom: 1rem; }
+
   header .hero h1 {
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
     line-height: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem; }
 
   header .hero p {
@@ -593,6 +605,13 @@ details[open] summary:after {
     text-align: center;
     line-height: 3rem;
     margin-bottom: 1.5rem; }
+
+  .awards {
+    padding-bottom: 1.25rem; }
+
+  .section-1 {
+    margin-top: 4rem;
+    margin-bottom: 0rem; }
 
   .section-1 .services-num {
     flex-direction: column; }
@@ -615,7 +634,6 @@ details[open] summary:after {
     margin-bottom: 0.5rem; }
 
   .section-2 .services-lhs {
-    margin-top: 4rem;
     width: 100%; }
 
   .section-4 .container {
@@ -657,15 +675,13 @@ details[open] summary:after {
   .awards {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 4.25rem; }
+    align-items: center; }
 
   .awards img {
     margin: 0;
     padding: 1rem; }
 
   .section-2 .services-lhs {
-    margin-top: 4rem;
     width: 100%; }
 
   .section-3 {
@@ -819,8 +835,11 @@ details[open] summary:after {
     color: var(--neutral);
     padding: 3rem 1.5rem; } }
 @media screen and (max-width: 300px) {
-  header {
-    padding: 2.5rem 2rem 0 2rem; }
+  header .hero {
+    padding: 0 0.5rem; }
+
+  .section-2 .container {
+    padding: 0 0.5rem; }
 
   header .hero h1 {
     color: var(--white);
@@ -844,6 +863,17 @@ details[open] summary:after {
     text-align: center;
     margin-bottom: 3.25rem;
     line-height: 1.8rem; }
+
+  .section-2 .services-lhs h3 {
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    color: var(--neutral);
+    margin-bottom: 2rem; }
 
   .section-3 .container button {
     display: flex;
