@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./assets/icons/flash.svg">
     <title>Contact Us | Solenergy</title>
     <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/pages/contact.css">
 </head>
+<style>
+    .logo,
+    .sol,
+    .En,
+    .rgy {
+        font-family: "Manrope", sans-serif;
+        margin-right: auto;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--white);
+    }
+</style>
+
 <body>
-    <!-- Navbar start -->
-    <header>
-        <p class="plogo">
-            <span class="sol">Sol</span><span class="En">En</span> <img class="logo" src="./assets/icons/flash.svg"
-                alt="logo"> <span class="rgy">rgy</span>
-        </p>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./services.html">Our Services</a></li>
-                <li><a class="active" href="./contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Navbar end -->
 
-     <!-- Main Content Container -->
-    <div class="main__container">
+    <div class="header">
+        <header>
+            <!-- Navbar Start -->
+            <div class="header__navbar" style="margin-bottom: 1.5rem;">
+                <a href="./index.html" class="plogo">
+                    <span class="sol">Sol</span><span class="En">En</span> <img class="logo"
+                        src="./assets/icons/flash.svg" alt="logo">
+                    <span class="rgy">rgy</span>
+                </a>
 
-        <!-- Left Section -->
-        <div class="left-section">
-            <img class="left-img" src="./assets/images/location.png" alt="">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./services.html">Our Services</a></li>
+                        <li><a class="active" href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Navbar end -->
+        </header>
+
+        <!-- Main Content Container -->
+        <div class="main__container">
+
+            <!-- Left Section -->
+            <div class="left-section">
+                <img class="left-img" src="./assets/images/location.png" alt="">
+            </div>
+
+            <!-- Right Section -->
+            <div class="right-section">
+                <div>
+                    <p class="contact">Contact us:</p>
+                    <p class="sub">You can reach out to us directly below:</p>
+                </div>
+
+                <!-- Contact Details -->
+                <div class="contact-details">
+                    <p><img src="./assets/icons/sms.svg" alt="" class="cmail">Solener_gyCorps@gmail.com</p>
+                    <p><img src="./assets/icons/call.svg" alt="" class="cphone">+234-8134547789</p>
+                    <p><img src="./assets/icons/location.svg" alt="" class="clocation">Area 11, Abuja - Nigeria</p>
+                </div>
+
+                <!-- Map Container -->
+                <div class="map-container">
+                    <img src="./assets/images/map.png" alt="solenergy-location">
+
+                </div>
+
+                <!-- Social Icons -->
+                <div class="socials">
+                    <img src="./assets/icons/insta.svg" alt="">
+                    <img src="./assets/icons/facebook.svg" alt="">
+                    <img src="./assets/icons/twitter.svg" alt="">
+                </div>
+
+            </div>
+
+
         </div>
-
-        <!-- Right Section -->
-        <div class="right-section">
-            <div>
-                <p class="contact">Contact us:</p>
-                <p class="sub">You can reach out to us directly below:</p>
-            </div>
-    
-             <!-- Contact Details -->
-            <div class="contact-details">
-                <p><img src="./assets/icons/sms.svg" alt="" class="cmail">Solener_gyCorps@gmail.com</p>
-                <p><img src="./assets/icons/call.svg" alt="" class="cphone">+234-8134547789</p>
-                <p><img src="./assets/icons/location.svg" alt="" class="clocation">Area 11, Abuja - Nigeria</p>
-            </div>
-            
-            <!-- Map Container -->
-            <div class="map-container">
-                <img src="./assets/images/map.png" alt="solenergy-location">
-
-            </div>
-            
-            <!-- Social Icons -->
-            <div class="socials">
-                <img src="./assets/icons/insta.svg" alt="">
-                <img src="./assets/icons/facebook.svg" alt="">
-                <img src="./assets/icons/twitter.svg" alt="">
-            </div>
-
-        </div>
-        
-        
     </div>
 
 </body>
+
 </html>

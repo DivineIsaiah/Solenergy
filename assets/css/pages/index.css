@@ -15,20 +15,14 @@ header {
 
 #hero {
   padding-inline: 7.5rem;
-  position: relative;
 }
 
-.hero__bg {
-  mix-blend-mode: color-dodge;
-  position: absolute;
-  right: 0;
-  background: url(../../images/Ellipse.png);
-  background-size: contain;
-  background-position: top right;
-  background-repeat: no-repeat;
-}
-
-.hero__content {
+.hero__content{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-content__title {
