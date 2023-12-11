@@ -279,7 +279,7 @@ figure figcaption {
   padding: 1.75rem 2.25rem;
   position: relative;
   border-radius: 1rem;
-  background: #c4c4c4;
+  background: var(--white);
 }
 
 .testimonial__card {
@@ -289,7 +289,7 @@ figure figcaption {
     bottom: 0;
     left: 50%;
     border: 13px solid transparent;
-    border-top-color: #c4c4c4;
+    border-top-color: var(--white);
     border-bottom: 0;
     margin-left: -13px;
     margin-bottom: -13px;
