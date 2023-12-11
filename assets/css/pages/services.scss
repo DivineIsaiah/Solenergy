@@ -35,6 +35,10 @@ body {
 // Hero Section
 
 // Hero Header
+header .hero{
+  padding: 0 7.5rem;
+}
+
 header .hero h1 {
   @include texts($weight: 700);
   margin-top: 8.62rem;
@@ -60,6 +64,10 @@ header .hero p {
 
 .btn-box-1 {
   @include display-flex;
+}
+
+.btn-box-1 a, .btn-box-2 a{
+  color: var(--neutral);
 }
 
 // Award Header
@@ -291,17 +299,35 @@ details[open] summary:after {
 // RESPONSIVENESS
 
 @media screen and (max-width: 1200px) {
-  // Section-2
+  
+  // Containers
 
+  // Header
+  header .hero{
+    padding: 0 5.5rem;
+  }
+  
+  // Section-1
+  .section-1 {
+    background-color: var(--white);
+    margin: 6rem 5.5rem 2rem 5.5rem;
+  }
+  // Section-2
+    .section-2 .container {
+      padding: 0 5.5rem;
+    }
+    
   // Services-Section Start
 
   // Services(1,2,3)
   .section-2 .services {
     flex-wrap: wrap;
+    margin-bottom:1rem;
   }
 
   // Services LHS
   .section-2 .services-lhs {
+    margin-top: 1rem;
     width: 100%;
   }
 
@@ -338,25 +364,94 @@ details[open] summary:after {
   }
 }
 
+@media screen and (max-width: 1050px){
+
+ // Containers
+
+  // Header
+  header .hero{
+    padding: 0 2.5rem;
+  }
+  
+  // Section-2
+    .section-2 .container {
+      padding: 0 1.5rem;
+    }
+
+  // Hero Header
+header .hero h1 {
+  @include texts($weight: 700);
+  margin-top: 8.62rem;
+  margin-bottom: 1rem;
+}
+
+// Hero Paragraph
+header .hero p {
+  @include texts(1.5rem, center, 400);
+  line-height: 2.125rem;
+  margin-bottom: 3.25rem;
+}
+
+// Hero Button
+.btn-1 {
+  @include texts(1.5rem, center, 600);
+  background-color: var(--green-500);
+  border: 0rem;
+  border-radius: 0.5rem;
+  margin-bottom: 4.5rem;
+  padding: 1.5rem;
+}
+
+.btn-box-1 {
+  @include display-flex;
+}
+
+
+.btn-box-1 a{
+  color: var(--neutral);
+}
+
+// Award Header
+header .hero #h3 {
+  @include texts(1.5rem, center, 500);
+  line-height: 5rem;
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
+  text-decoration-color: var(--green-500);
+  text-underline-offset: 0.5rem;
+}
+
+// Awards
+.awards {
+  @include display-flex;
+  padding-bottom: 6.25rem;
+}
+
+.awards img {
+  margin-left: 2.75rem;
+}
+
+}
+
+
 @media screen and (max-width: 900px) {
   // Header
 
-  header {
-    padding: 2.5rem 2rem 0 2rem;
-  }
 
   // Hero Section
 
   // Hero Header
   header .hero h1 {
     @include texts(3rem, center, 700);
-    margin-top: 5.62rem;
+    margin-top: 4.62rem;
   }
 
   // Hero Paragraph
   header .hero p {
     @include texts(1rem, center, 400);
+    line-height:2rem;
   }
+
 
   // Section-1
 
@@ -444,7 +539,7 @@ details[open] summary:after {
 
   // Hero Header
   header .hero h1 {
-    @include texts(2rem, center, 700);
+    @include texts(2.5rem, center, 700);
     line-height: 3rem;
     margin-top: 5.62rem;
   }
@@ -480,7 +575,7 @@ details[open] summary:after {
   // Section-1 Header Starts
 
   .section-1 .h2 {
-    @include texts(2rem, center, 700);
+    @include texts(2.5rem, center, 700);
     color: var(--neutral);
     margin-bottom: 2rem;
   }
@@ -557,13 +652,18 @@ details[open] summary:after {
 }
 
 @media screen and (max-width: 600px) {
+  
   // Header
-
+  .header .container{
+    margin-bottom: 1rem;
+  }
   // Hero Section
 
   // Hero Header
   header .hero h1 {
+    @include texts(2rem, center, 700);
     line-height: 2.5rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
   }
 
@@ -580,7 +680,17 @@ details[open] summary:after {
     margin-bottom: 1.5rem;
   }
 
-  // Section-1
+  // Awards
+.awards {
+  padding-bottom: 1.25rem;
+}
+
+  // Section-1`
+
+  .section-1{
+    margin-top: 4rem;
+    margin-bottom: 0rem;
+  }
 
   // Section-1 Services Number
   .section-1 .services-num {
@@ -618,7 +728,6 @@ details[open] summary:after {
   // Services-Section Start
   // Services LHS
   .section-2 .services-lhs {
-    margin-top: 4rem;
     width: 100%;
   }
   // Services-Section End
@@ -658,7 +767,6 @@ details[open] summary:after {
   // Awards
   .awards {
     @include display-flex;
-    padding-bottom: 4.25rem;
   }
 
   .awards img {
@@ -666,14 +774,10 @@ details[open] summary:after {
     padding: 1rem;
   }
 
-  // Section-1
-
-  //Services Number First P-tag
   // Section-2
 
   // Services LHS
   .section-2 .services-lhs {
-    margin-top: 4rem;
     width: 100%;
   }
 
@@ -810,13 +914,22 @@ details[open] summary:after {
 }
 
 @media screen and (max-width: 300px) {
+  
+  // Containers
+
   // Header
-
-  header {
-    padding: 2.5rem 2rem 0 2rem;
+  header .hero{
+    padding: 0 0.5rem;
   }
-  // Hero Section
+  
+  // Section-2
+    .section-2 .container {
+      padding: 0 0.5rem;
+    }
 
+  // Header
+  
+  // Hero Section
   // Hero Header
   header .hero h1 {
     @include texts(1.1rem, center, 700);
@@ -831,6 +944,15 @@ details[open] summary:after {
     margin-bottom: 3.25rem;
     line-height: 1.8rem;
   }
+
+  // Services LHS
+
+.section-2 .services-lhs h3 {
+  @include texts(1.5rem, center, 600);
+  color: var(--neutral);
+  margin-bottom: 2rem;
+}
+
 
   // Section-3 Container
   .section-3 .container button {
