@@ -5,7 +5,7 @@
     --green-500: #45B73B;
     --green-600: #3AAC30;
     --green-900: #005B00;
-    --green-gradient:radial-gradient(circle, rgba(25,52,16,1) 8%, rgba(21,41,12,1) 22%, rgba(15,24,6,1) 70%);
+    --green-gradient:radial-gradient(circle, rgba(25,52,16,1) 16%, rgba(21,41,12,1) 22%, rgba(15,24,6,1) 70%);
     --indigo-950: #300D38;
     --neutral-700: #414042;
     --neutral-900: #111A08;
