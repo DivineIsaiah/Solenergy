@@ -17,7 +17,7 @@ header {
   padding-inline: 7.5rem;
 }
 
-.hero__content{
+.hero__content {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -220,7 +220,7 @@ figure figcaption {
   line-height: 1.875rem; /* 150% */
 }
 
-#metrics{
+#metrics {
   padding: 7.25rem 10.5rem;
   display: flex;
   flex-direction: column;
@@ -229,8 +229,126 @@ figure figcaption {
   gap: 2rem;
 }
 
-#metrics > h2{
-color: var(--neutral);
-font-size: 2.5rem;
-font-weight: 700;
+#metrics > h2 {
+  color: var(--neutral);
+  font-size: 2.5rem;
+  font-weight: 700;
 }
+
+#testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--stone-950);
+  position: relative;
+  padding: 3.5rem 7.44rem;
+}
+
+#testimonials > svg {
+  position: absolute;
+  left: 31.25rem;
+  bottom: -7.625rem;
+}
+
+.testimonials,
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  max-width: 44.5rem;
+}
+.testimonials > h2 {
+  color: var(--white);
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.testimonial-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+
+.testimonial__card {
+  padding: 1.75rem 2.25rem;
+  position: relative;
+  border-radius: 1rem;
+  background: #c4c4c4;
+}
+
+.testimonial__card {
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border: 13px solid transparent;
+    border-top-color: #c4c4c4;
+    border-bottom: 0;
+    margin-left: -13px;
+    margin-bottom: -13px;
+  }
+}
+
+.testimonial__card > h5 {
+  color: var(--stone-950);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.testimonial__card > p {
+  margin-top: 0.5rem;
+  color: var(--neutral);
+  font-size: 1.125rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.875rem; /* 166.667% */
+}
+
+.card__profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.card__profile > div > h6 {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.card__profile > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+.card__profile > div > p {
+  color: var(--white);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.circles {
+  display: flex;
+  gap: 0.81rem;
+}
+
+#operations{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 7.25rem;
+}
+
+
+
+
