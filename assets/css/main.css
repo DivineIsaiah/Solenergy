@@ -1,5 +1,7 @@
 /* pages */
 @import url('./pages/index.css');
+@import url('./pages/services.css');
+@import url('./pages/contact.css');
 
 /* components */
 @import url('./components/navbar.css');
