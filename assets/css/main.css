@@ -1,0 +1,31 @@
+/* pages */
+@import url('./pages/index.css');
+@import url('./pages/services.css');
+@import url('./pages/contact.css');
+
+/* components */
+@import url('./components/navbar.css');
+@import url('./components/footer.css');
+
+/* utilities */
+@import url('./others/fonts.css');
+@import url('./others/variables.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Inter", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}

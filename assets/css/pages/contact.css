@@ -1,0 +1,68 @@
+/* Main Content Container Styling */
+.main__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.left-section{
+    margin-top: -10rem;
+    height: 100vh;
+}
+
+/* Right Section Styling */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    color: var(--white);
+}
+
+/* Contact Information Styling */
+.contact {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.sub,
+.contact-details {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Styling for Contact Details Section */
+.contact-details {
+  margin-top: 16px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  vertical-align: middle;
+}
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+}
+
+.contact-details img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Styling for Map Container */
+.map-container {
+  margin: 32px 0;
+}
+
+/* Styling for Social Icons Section */
+.socials{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 3.5rem;
+}
+.socials img {
+    margin-right: 2rem;
+}

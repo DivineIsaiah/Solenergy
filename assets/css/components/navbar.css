@@ -1,0 +1,47 @@
+.header__navbar {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 7.5rem 0;
+}
+
+.header__navbar .nav__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+.logo,
+.sol,
+.En,
+.rgy {
+  font-family: "Manrope", sans-serif;
+  margin-right: auto;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.sol {
+  color: var(--green-500);
+}
+
+.nav__links li a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.5rem;
+  transition: all 0.15s;
+}
+
+.nav__links li a.active {
+  font-weight: bold;
+  color: var(--green-500);
+}
+
+.nav__links li a:hover {
+  color: var(--green-500);
+  font-size: 1.125rem;
+}
